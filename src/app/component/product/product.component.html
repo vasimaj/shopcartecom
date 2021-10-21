@@ -1,0 +1,69 @@
+<div class="card-top container-fluid">
+    <div class="container d-flex">
+        <div class="item">
+            <a>
+                <img src="https://rukminim1.flixcart.com/flap/128/128/image/3450e4be3b9d6d3b.jpg?q=100" alt="">
+            </a>
+            <h6>Mobile</h6>
+        </div>&nbsp;&nbsp;&nbsp;
+        <div class="item">
+            <a>
+                <img src="https://rukminim1.flixcart.com/flap/128/128/image/6405362ab0aaa3d5.png?q=100" alt="">
+            </a>
+            <h6>&nbsp;
+                fashion
+            </h6>
+            
+        </div>&nbsp;&nbsp;&nbsp;
+        <div class="item">
+            <a>
+            <img src="https://rukminim1.flixcart.com/flap/128/128/image/38773f7201f9b9be.png?q=100" alt="">
+            </a>
+            <h6>Electronic</h6>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </div>&nbsp;&nbsp;&nbsp;
+        <div class="item">
+            <a>
+                <img src="https://rukminim1.flixcart.com/flap/128/128/image/39c66f9cc1d82569.png?q=100" alt="">
+            </a>
+           <h6>Applience</h6>
+        </div>
+        <div class="item">
+            <a>
+                <img src="https://rukminim1.flixcart.com/flap/128/128/image/2a284788d550ac21.png?q=100" alt="">
+            </a>
+            <h6>Furnitue</h6>
+        </div>
+        <div class="item">
+            <a>
+                <img src="https://rukminim1.flixcart.com/flap/128/128/image/bd1572c1e4cadd2b.png?q=100" alt="">
+            </a>
+            <h6>Beauty,Toys & more</h6>
+        </div>
+        <div class="item">
+            <a>
+                <img src="https://rukminim1.flixcart.com/flap/128/128/image/798ca135a6c13d97.png?q=100" alt="">
+            </a>
+            <h6>Grocery</h6>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <ng-container *ngFor="let item of productList">
+            <div class="card col-sm-3">
+                <img src="{{item.image}}" alt="">
+                <h5 style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100ch">{{item.title}}</h5>
+                <p style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100ch">{{item.description}}</p>
+                <p><strong>Price:</strong>${{item.price}}</p>
+                <button type="button"  class="btn btn-primary" (click)=addtoCart(item)>Add To Cart</button>
+                
+                
+                
+    
+            </div>
+        </ng-container>
+        
+    </div>
+</div>
+
+
